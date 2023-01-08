@@ -1,0 +1,64 @@
+.AppGrid__container{
+    display: grid;
+    grid-template-areas: "App1 App2"
+                        "App3 App4"; 
+    grid-template-rows: 20rem 20rem;  
+    grid-template-columns: 25vw 25vw;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.App__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 3rem;
+    background-color: grey;
+
+}
+
+.AppGrid__app1{
+    grid-area: App1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: brown;
+    border: 2px whitesmoke solid;
+}
+
+.AppGrid__app2{
+    grid-area: App2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: brown;
+    border: 2px whitesmoke solid;
+}
+
+.AppGrid__app3{
+    grid-area: App3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: brown;
+    border: 2px whitesmoke solid;
+}
+
+.AppGrid__app4{
+    grid-area: App4;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: brown;
+    border: 2px whitesmoke solid;
+}
+
+
+.AppGrid__icon{
+    
+}
