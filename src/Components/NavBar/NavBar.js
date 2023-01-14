@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (   
@@ -9,7 +10,7 @@ const NavBar = () => {
         <Navbar bg="dark" variant="dark">
             <Container>
 
-            <Navbar.Brand href="#home">
+            <Navbar.Brand as={Link} to="/">
                 <img
                 alt=""
                 src="/logo.svg"
@@ -21,7 +22,7 @@ const NavBar = () => {
             </Navbar.Brand>
 
             <Nav className="me-auto">
-                <Nav.Link href="#link">LOCALES</Nav.Link>
+                <Nav.Link as={Link} to="/productos">PRODUCTOS</Nav.Link>
                 <Nav.Link href="#link">EVENTOS</Nav.Link>
                 <Nav.Link href="#home">VENTAS CORPORATIVAS</Nav.Link>
                 <Nav.Link href="#home">QUIERO VENDER</Nav.Link>

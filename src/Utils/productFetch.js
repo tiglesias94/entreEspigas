@@ -24,7 +24,7 @@ export const getAllProducts = () => {
 export const getProduct = () => {
 
     const database = getFirestore();
-    const itemReference = collection(database, "products", id)
+    const itemReference = collection(database, "products")
 
     return getDocs(itemReference)
     .then((snapshot)=>{
