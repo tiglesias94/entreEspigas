@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {getAllProducts} from "../../Utils/productFetch"
+import SignUp from "../Auth/SignUp";
 import ProductCard from "./ProductCard";
 
 
@@ -18,6 +19,7 @@ const  ProductGrid= () => {
 
     return ( 
         <>
+
         <h1>Product List:</h1>
         <div>
             {products.map((item) => (
